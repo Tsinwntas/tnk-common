@@ -38,7 +38,7 @@ console.log(isEmpty([]), isEmpty(), isEmpty([3]))
 
 Finds and removes one entity matching the condition from list.
 
-* @param list Property to alter
+* @param list List to alter
 * @param condition condition used to find the element to remove
 
 ```
@@ -54,7 +54,7 @@ console.log(array)
 
 Finds and removes all entities matching the condition from list.
 
-* @param list Property to alter.
+* @param list List to alter.
 * @param condition condition used to find the element to remove
 
 ```

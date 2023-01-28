@@ -18,7 +18,7 @@ export function isEmpty(property?: any[] | string) : boolean {
 
 /**
  * Finds and removes one entity matching the condition from list.
- * @param list Property to alter
+ * @param list List to alter
  * @param condition condition used to find the element to remove
  */
 export function removeFromList(list : any[], condition : (any) => boolean) : void {
@@ -29,7 +29,7 @@ export function removeFromList(list : any[], condition : (any) => boolean) : voi
 
 /**
  * Finds and removes all entities matching the condition from list.
- * @param list Property to alter.
+ * @param list List to alter.
  * @param condition condition used to find the element to remove
  */
 export function removeAllFromList(list : any[], condition : (any) => boolean) : void {
