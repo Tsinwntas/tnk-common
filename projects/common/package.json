@@ -1,12 +1,16 @@
 {
   "name": "@tnk-modules/common",
   "author": "Nicolas Tsinik Tsinontas",
-  "description": "Angular simplification if the IndexedDB functionality.",
-  "version": "0.0.1",
+  "description": "Typescript common functionality.",
+  "version": "0.0.2",
   "license": "TnkDevelopment",
   "private": false,
   "keywords": [
-    "typescript"
+    "typescript",
+    "common",
+    "utils",
+    "string",
+    "array"
   ],
   "repository": {
     "type": "git",
