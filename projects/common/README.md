@@ -1,19 +1,11 @@
 # TnkStorage
 
-This library is to provide a simple way of using indexed-db for typescript.
-
-Perfect for simple object structure. Each table created has a schema of
-`{databasekey : string, entity : StorageEntity}`
-
-Each database key is created by its self and this library handles problems such as class functions lost due to JSON retrieval from the database.
-It also creates by default a 'user' table, that holds the user for setting different kinds of user-preferences.
+This library is to provide a few commonly used functionality for handling common items.
 
 
 ## Installation
 
-`$ npm install ngx-indexed-db`
-
-`$ npm install @tnk-modules/storage`
+`$ npm install @tnk-modules/common`
 
 ## Usage
 

@@ -13,9 +13,9 @@
     "module": "es2020",
     "lib": ["es2018", "dom"],
     "paths": {
-      "{TNK_MODULE}": [
-        "dist/{TNK_MODULE}",
-        "dist/{TNK_MODULE}/{TNK_MODULE}"
+      "common": [
+        "dist/common",
+        "dist/common/common"
       ]
     }
   }

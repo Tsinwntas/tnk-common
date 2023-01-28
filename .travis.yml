@@ -6,14 +6,14 @@ before_script:
   - npm install -g yarn
 script:
   - yarn build:lib
-  - cp README.md dist/{TNK_MODULE}
-  - cp LICENSE dist/{TNK_MODULE}
+  - cp README.md dist/common
+  - cp LICENSE dist/common
   - npm pack
 cache:
   directories:
     - node_modules
 after_success:
-  - cd dist/{TNK_MODULE}
+  - cd dist/common
   - npm publish
 deploy:
   - provider: releases
@@ -24,7 +24,7 @@ deploy:
       tags: true
   - provider: npm
     skip_cleanup: true
-    local_dir: dist/{TNK_MODULE}/
+    local_dir: dist/common/
     api_key: '$NPM_TOKEN'
     on:
       tags: true
