@@ -1,0 +1,79 @@
+{
+  "name": "tnk-modules",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "build:lib": "ng build --project {TNK_MODULE} --configuration production",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "format": "prettier \"projects/**/*.{ts,json}\" --write"
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "prettier --write"
+    ],
+    "*.{css}": [
+      "prettier --write"
+    ],
+    "projects/{TNK_MODULE}/**/*.{tsx,js}": [
+      "ng lint"
+    ]
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^14.2.12",
+    "@angular/common": "^14.2.12",
+    "@angular/compiler": "^14.2.12",
+    "@angular/core": "^14.2.12",
+    "@angular/forms": "^14.2.12",
+    "@angular/platform-browser": "^14.2.12",
+    "@angular/platform-browser-dynamic": "^14.2.12",
+    "@angular/router": "^14.2.12",
+    "rxjs": "~6.5.5",
+    "tslib": "^2.0.0",
+    "zone.js": "~0.11.4",
+    "ngx-indexed-db": "^12.0.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^14.2.10",
+    "@angular/cli": "^14.2.10",
+    "@angular/compiler-cli": "^14.2.12",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@types/jasmine": "~3.6.0",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.20.13",
+    "codelyzer": "^6.0.0",
+    "commitlint": "^12.1.4",
+    "cz-conventional-changelog": "3.2.0",
+    "husky": ">=4",
+    "jasmine-core": "~3.8.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "karma": "~6.3.16",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage-istanbul-reporter": "~3.0.2",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "^1.5.0",
+    "lint-staged": ">=10",
+    "ng-packagr": "^14.2.2",
+    "prettier": "2.1.1",
+    "protractor": "~7.0.0",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "4.8.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "types": "dist/ngx-indexed-db/lib/ngx-indexed-db.meta.d.ts"
+}

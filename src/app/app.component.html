@@ -1,0 +1,18 @@
+<div>
+  <h3>Type A</h3>
+  <ul>
+    <li *ngFor="let item of typeAItems" >{{item.name}}</li>
+  </ul>
+  <h3>Type B</h3>
+  <ul>
+    <li *ngFor="let item of typeBItems" >{{item.name}}</li>
+  </ul>
+</div>
+<h3>New Item</h3>
+<input type="text" required [(ngModel)]="itemName" placeholder="Name"/>
+<select type="text" required [(ngModel)]="itemType" placeholder="Type">
+  <option value="A">A</option>
+  <option value="B">B</option>
+</select>
+<button (click)="addItem()">ADD</button>
+<router-outlet></router-outlet>
