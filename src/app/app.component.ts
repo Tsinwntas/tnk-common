@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { capitalize, isEmpty, isInvalid, removeAllFromList, removeFromList, trimTrails } from 'projects/common/src/public-api';
+import { capitalize, isEmpty, isInvalid, removeAllFromList, removeFromList, trimTrails } from '@tnk-modules/common';
 
 
 
