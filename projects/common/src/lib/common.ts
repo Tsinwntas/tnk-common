@@ -23,7 +23,7 @@ export function isEmpty(property?: any[] | string) : boolean {
  */
 export function removeFromList(list : any[], condition : (any) => boolean) : void {
     const index = list.findIndex(condition);
-    if(index>0)
+    if(index>-1)
         list.splice(index,1);
 }
 
@@ -35,7 +35,7 @@ export function removeFromList(list : any[], condition : (any) => boolean) : voi
 export function removeAllFromList(list : any[], condition : (any) => boolean) : void {
     do{
         const index = list.findIndex(condition);
-        if(index>0)
+        if(index>-1)
             list.splice(index,1);
         else
             return;
